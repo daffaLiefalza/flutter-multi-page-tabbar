@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:multipage_application/login_page.dart';
+import 'package:multipage_tabbar/login_page.dart';
 
 void main() {
   runApp(MyApp());

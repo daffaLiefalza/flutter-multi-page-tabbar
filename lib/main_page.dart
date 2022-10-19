@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:multipage_tabbar/main_page.dart';
+import 'package:multipage_tabbar/second_page.dart';
 
-class LoginPage extends StatelessWidget {
+class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Main Page"),
+      ),
       body: Center(
         child: ElevatedButton(
-          child: Text("Login"),
+          child: Text("Second Page"),
           onPressed: () {
-            Navigator.pushReplacement(context, MaterialPageRoute(
+            Navigator.push(context, MaterialPageRoute(
               builder: (context) {
-                return MainPage();
+                return SecondPage();
               },
             ));
           },
